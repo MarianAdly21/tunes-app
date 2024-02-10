@@ -11,7 +11,19 @@ class TunesApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(),
+      home: Scaffold(
+        appBar: AppBar(
+          centerTitle: true,
+          backgroundColor: Color(0xff243138),
+          title: Text(
+            'Flutter Tune',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 28,
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
